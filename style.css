@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0;
+    padding: 0;    
+    margin: 0 auto;
+    margin-bottom: 47px;
+    list-style: none;
+}
+
+.navigation__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.navigation__link_white {
+    color: #FFFFFF;
+}
+
+.navigation__link:hover {
+    color: #FF7931;
+}
+
+.underwater-hotel {
+    position: relative;
+    margin-bottom: 44px;
+    padding: 46px 0 48px;
+    text-align: center;
+    height: 464px;
+    background-color: black;
+    background: #000 url("img/underwaterhotel.jpg") no-repeat 50% 50%;
+    box-sizing: border-box;    
+}
+
+.underwater-hotel__new {
+    visibility: hidden;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    left: 135px;
+    top: 0px;
+    width: 117px;
+    height: 25px;
+    background: #FF7931;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.underwater-hotel:hover .underwater-hotel__new {
+    visibility: visible;
+}
+
+.underwater-hotel__image {
+    margin-bottom: 10px;
+}
+
+.underwater-hotel__title {
+    margin-bottom: 110px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 0px;
+    margin-bottom: 180px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.underwater-hotel__text {
+    width: 456px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.reviews {
+    margin-bottom: 40px;    
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.reviews__item {
+    width: 370px;
+}
+
+.reviews__item:hover .reviews__title {
+    color: #FF7931;
+}
+
+.reviews__title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    color: #000000;
+}
+
+.reviews__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.subscription {
+    background: radial-gradient(circle, #ffffff 353px, #F7F7F7 353px);
+    padding-top: 45px;
+    padding-bottom: 24px;
+    margin-bottom: 60px;
+}
+
+.subscription__item {
+    position: relative;
+}
+
+.subscription__item:first-child::after,
+.subscription__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 100px; 
+    left: 50%;
+    transform: translate(-50%);
+    height: 1px;
+    opacity: 0.4;    
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.subscription__list {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.subscription__title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    color: #000000;
+}
+
+.subscription__text {
+    position: relative;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 17px 60px 16px 30px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    width: 170px;
+    height: 47px;
+    background-color: #FF7931;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(img/arrow.svg) no-repeat;
+    top: 11px;
+    right: 25px;
+}
+
+.footer {
+    background: #575757;    
+    padding-top: 26px;
+    padding-bottom: 46px;
+}
+
+.footer__subtitle {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.footer .navigation {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.footer .navigation::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    width: 1170px;
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.4;
+}
+
+.footer__social-list {
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;  
+    list-style: none;
+}
+
+.footer__social-item {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;    
+}
+
+.footer__social-item:first-child {
+    padding: 12px;
+}
+
+.footer__social-item:nth-child(2) {
+    padding: 13px 18px 12px 17px;
+}
+
+.footer__social-item:last-child {
+    padding: 15px 13px 14px 12px;
+}
+
+
+
